@@ -14,6 +14,8 @@ npx hardhat run scripts/deploy.js
 
 # Scripts
 
+** Storage & StorageSlot contracts **
+
 3 scripts to practice different use cases to lookup storage
 
 1. lookup script:
@@ -27,3 +29,5 @@ npx hardhat run scripts/deploy.js
 3. lookupCheckFunction script
    We use the interface of the contract to call the check method. We don't use getStorageAt, instead we use the hre method getContractAt.
    The value will be logged to our local node since we used console.log on the backend (solidity contract)
+
+** FunWithStorage contract **
