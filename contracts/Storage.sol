@@ -2,6 +2,7 @@
 pragma solidity ^0.8.17;
 
 import "./StorageSlot.sol";
+import "hardhat/console.sol";
 
 contract Storage {
     uint256 x = 22; // 0x0
@@ -17,5 +18,9 @@ contract Storage {
 
         /** Allocating 2019 value to keccak256("aboutika") slot */
         StorageSlot.getUint256Slot(keccak256("aboutika")).value = 2019;
+    }
+
+    function check() external view {
+        console.log(StorageSlot.getUint256Slot(keccak256("aboutika")).value);
     }
 }
