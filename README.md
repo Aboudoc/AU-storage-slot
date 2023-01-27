@@ -31,3 +31,6 @@ npx hardhat run scripts/deploy.js
    The value will be logged to our local node since we used console.log on the backend (solidity contract)
 
 ** FunWithStorage contract **
+
+More about Solidity Storage Layout:
+https://docs.alchemy.com/docs/smart-contract-storage-layout
