@@ -5,10 +5,9 @@ import "./StorageSlot.sol";
 
 contract Proxy {
     fallback() external {
-        (bool success, ) = StorageSlot
-            .getAddressSlot(keccak256("impl"))
-            .value
-            .delegatecall(msg.data);
+        (bool success, ) = StorageSlot.getAddressSlot(keccak256("impl")).value.delegatecall(
+            msg.data
+        );
         require(success);
     }
 
@@ -18,17 +17,17 @@ contract Proxy {
 }
 
 contract logic1 {
-    uint x;
+    uint256 x;
 
-    function changeX(uint _x) external {
+    function changeX(uint256 _x) external {
         x = _x;
     }
 }
 
 contract logic2 {
-    uint x;
+    uint256 x;
 
-    function changeX(uint _x) external {
+    function changeX(uint256 _x) external {
         x = _x;
     }
 

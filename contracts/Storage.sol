@@ -8,7 +8,7 @@ contract Storage {
     uint256 x = 22; // 0x0
     uint256 y = 12; // 0x1
 
-    mapping(uint => uint) testing; // 0x2
+    mapping(uint256 => uint256) testing; // 0x2
 
     constructor() {
         // keccak256(84 in hex + 0x2)
