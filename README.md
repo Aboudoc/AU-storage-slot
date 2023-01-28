@@ -32,5 +32,10 @@ npx hardhat run scripts/deploy.js
 
 ** FunWithStorage contract **
 
+** StorageProxy contract **
+
+** Additional ressources **
 More about Solidity Storage Layout:
 https://docs.alchemy.com/docs/smart-contract-storage-layout
+
+More about Proxy:
