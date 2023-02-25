@@ -14,7 +14,7 @@ npx hardhat run scripts/deploy.js
 
 # Scripts
 
-** Storage & StorageSlot contracts **
+## Storage & StorageSlot contracts
 
 3 scripts to practice different use cases to lookup storage
 
@@ -30,13 +30,16 @@ npx hardhat run scripts/deploy.js
    We use the interface of the contract to call the check method. We don't use getStorageAt, instead we use the hre method getContractAt.
    The value will be logged to our local node since we used console.log on the backend (solidity contract)
 
-** FunWithStorage contract **
+## FunWithStorage contract
 
-** StorageProxy contract **
+(coming soon)
+
+## StorageProxy contract
+
+(coming soon)
 
 # Additional ressources
 
-More about Solidity Storage Layout:
-https://docs.alchemy.com/docs/smart-contract-storage-layout
+More about Solidity Storage Layout from this [Alchemy's tutorial](https://docs.alchemy.com/docs/smart-contract-storage-layout)
 
-More about Proxy:
+More about Transparent Upgradable Proxy and assembly used to write in storage and return data from fallbak can be found in this [repo](https://github.com/Aboudoc/Transparent-Upgradable-Proxy-assembly)
